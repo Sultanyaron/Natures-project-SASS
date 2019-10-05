@@ -1,0 +1,15 @@
+****//installing**//
+1. npm init - init the package files
+2. npm install node-sass --save-dev
+3. to compile, in package.json add to the scripts - "compile:sass": "node-sass sass/main.scss css/style.css -w"
+ after nose-sass the second argument is the sass location file, and the thirdis where to put the output.
+ the -w in the end the the "watcher", when we run the script it will watch for change and recompile,
+4. run the script : npm run compile:sass. now when save changes, it will recompile
+5. install live-server : npm install live-server -g, the -g means it install the package
+ globaly on our computer.
+
+6. because its global package we cal call it like this: live-server and enter
+
+-- if we only have the package file and not the node folder, we can do npm install to install all the dependancies 
+packages
+in the package.json file
