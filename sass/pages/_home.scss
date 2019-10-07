@@ -15,8 +15,19 @@
         to right bottom,
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)),
-    url(../img/nat-4.jpg);
+    url(../img/nat-4-small.jpg);
     background-size: cover;
+
+    //MEDIA QUERY responsive images. 37.5em = 600px,    125em = 2000px;
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+           (min-width: 125em){
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url(../img/nat-4.jpg);
+    }
 
     transform: skewY(-7deg);
     /*select all direct childs (one lvl bottom)*/
